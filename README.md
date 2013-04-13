@@ -22,22 +22,26 @@ Emacs:
 
 Download last release from "github project page":http://github.com/dima-exe/emacs-rails-reloaded/downloads
 and unpack it to directory containing libraries of Emacs, by default it’s
-$HOME/.emacs.d/
+`$HOME/.emacs.d/`
 
-After that add bellow code in your the .emacs file:
+After that add bellow code in your the `.emacs` file:
 
+```
   (setq load-path (cons (expand-file-name "~/.emacs.d/rails-reloaded") load-path))
   (require 'rails-autoload)
+```
 
-Next bytecompile, press [M-x] and type rails/bytecompile.
+Next bytecompile, press `[M-x]` and type `rails/bytecompile`.
 
 
 # First Acquaintance
 
 Go to directory with your rails application and open any file in Emacs:
 
+```
   cd $HOME/project/simple_rails_application
   emacs app/controllers/application.rb
+```
 
 There must be “RoR” sign in the list of active minor-modes in status
 bar. Thi means, that emacs-rails is enabled and ready to help you in
@@ -52,36 +56,36 @@ can find them in the brackets.
 # Features
 
 * Integration with script/generate, script/destroy and rake, press
-  [C-c '] or [C-c ;] and type 'rake', 'gen', 'des' to display
+  `[C-c ']` or `[C-c ;]` and type 'rake', 'gen', 'des' to display
   available tasks.
 
 * Navigation around rails files,
-  press [C-c '] or [C-c ;] to display available files.
-  [C-c up] to toggle (controller|mailer) <> view.
-  [C-c t] to toggle test <> implementation.
+  * press `[C-c ']` or `[C-c ;]` to display available files.
+  * `[C-c up]` to toggle (controller|mailer) <> view.
+  * `[C-c t]` to toggle test <> implementation.
 
   NEW NAVIGATION FEATURE:
   Press:
 
-  [C-c m] to display model list
-  [C-c g] to display migration list
-  [C-c c] to display controller list 
-  [C-c v] to display view list
-  [C-c l] to display cell list
-  [C-c j] to display javascript list
-  [C-c s] to display css styles list
-  [C-c b] to display library list
-  [C-c f] to display cucumber features list
+  * `[C-c m]` to display model list
+  * `[C-c g]` to display migration list
+  * `[C-c c]` to display controller list 
+  * `[C-c v]` to display view list
+  * `[C-c l]` to display cell list
+  * `[C-c j]` to display javascript list
+  * `[C-c s]` to display css styles list
+  * `[C-c b]` to display library list
+  * `[C-c f]` to display cucumber features list
 
-* Support test frameworks Test::Unit and RSpec, press [C-c C-c .] or
-  [C-c C-c ,] to run current test.
+* Support test frameworks Test::Unit and RSpec, press `[C-c C-c .]` or
+  `[C-c C-c ,]` to run current test.
 
 * Management of WEBrick/Mongrel/Thing
 
 * Per project configuration, you can setup the default port for server,
   the environment or etc.
 
-* Apidock.com integration, press [C-c '] or [C-c ;] and type who you
+* Apidock.com integration, press `[C-c ']` or `[C-c ;]` and type who you
   wish find.
 
 * Textmate like snippets.
