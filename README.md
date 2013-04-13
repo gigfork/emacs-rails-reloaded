@@ -2,7 +2,7 @@ It is the minor mode for editing Ruby On Rails code with Emacs. This
 minor mode makes your work much easier and user friendly.
 
 
-== Requirements
+# Requirements
 
 The emacs-rails-reloaded is requiring a 22.x or 23 (CVS) version of
 Emacs, and can’t be running on old versions (less 22.0). To install
@@ -18,7 +18,7 @@ Emacs:
 * For Windows: download and install "EmacsW32":http://ourcomments.org/Emacs/EmacsW32.html
 
 
-== Instalation
+# Installation
 
 Download last release from "github project page":http://github.com/dima-exe/emacs-rails-reloaded/downloads
 and unpack it to directory containing libraries of Emacs, by default it’s
@@ -32,7 +32,7 @@ After that add bellow code in your the .emacs file:
 Next bytecompile, press [M-x] and type rails/bytecompile.
 
 
-== First Acquaintance
+# First Acquaintance
 
 Go to directory with your rails application and open any file in Emacs:
 
@@ -43,13 +43,13 @@ There must be “RoR” sign in the list of active minor-modes in status
 bar. Thi means, that emacs-rails is enabled and ready to help you in
 your not so easy work.
 
-Almoust all actions are in the “RoR” menu. You can check it
+Almost all actions are in the “RoR” menu. You can check it
 out and try some of them. Don’t forget, that menu will help you only
 first time. After that you better use hot keys for effective work, you
 can find them in the brackets.
 
 
-== Features
+# Features
 
 * Integration with script/generate, script/destroy and rake, press
   [C-c '] or [C-c ;] and type 'rake', 'gen', 'des' to display
@@ -87,7 +87,7 @@ can find them in the brackets.
 * Textmate like snippets.
 
 
-== Links
+# Links
 
 For bugs, patches and other requests:
 http://dima.lighthouseapp.com/projects/1882-emacs-rails
